@@ -1,4 +1,5 @@
 import Footer from 'components/layout/footer';
+import { SearchFilter } from 'components/layout/navbar/search';
 import Collections from 'components/layout/search/collections';
 import FilterList from 'components/layout/search/filter';
 import { sorting } from 'lib/constants';
@@ -12,6 +13,7 @@ export default function SearchLayout({ children }: { children: React.ReactNode }
           <Collections />
         </div>
         <div className="order-last min-h-screen w-full md:order-none">
+          <SearchFilter />
           <ChildrenWrapper>{children}</ChildrenWrapper>
         </div>
         <div className="order-none flex-none md:order-last md:w-[125px]">
