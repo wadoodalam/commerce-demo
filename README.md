@@ -2,7 +2,7 @@
 
 # Next.js Commerce
 
-A high-perfomance, server-rendered Next.js App Router ecommerce application.
+A high-performance, server-rendered Next.js App Router ecommerce application.
 
 This template uses React Server Components, Server Actions, `Suspense`, `useOptimistic`, and more.
 
@@ -33,6 +33,7 @@ Vercel is happy to partner and work with any commerce provider to help them get 
 Integrations enable upgraded or additional functionality for Next.js Commerce
 
 - [Orama](https://github.com/oramasearch/nextjs-commerce) ([Demo](https://vercel-commerce.oramasearch.com/))
+
   - Upgrades search to include typeahead with dynamic re-rendering, vector-based similarity search, and JS-based configuration.
   - Search runs entirely in the browser for smaller catalogs or on a CDN for larger.
 
