@@ -24,7 +24,7 @@ export async function getFilteredProducts(products: Product[], searchQuery: stri
 
   const chatCompetion = await openai.beta.chat.completions.parse({
     messages: [
-      {role: "user", content: searchQuery},
+      {role: "user", content: searchQuery ?? ""},
       {role: "system", content: `The input JSON is here: ${JSON.stringify(simplifiedProducts)}`},
       {role: "system", content: "You should act as a fashion designer. Based on the descriptions of the products, you should try to suggest pairing outfits based on the description and the user query. Return the result using the IDs from the JSON input."}
     ],
