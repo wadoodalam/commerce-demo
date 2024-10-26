@@ -120,6 +120,7 @@ export type ShopifyProduct = {
   handle: string;
   availableForSale: boolean;
   title: string;
+  enhancedDescription: ShopifyMetafield;
   description: string;
   descriptionHtml: string;
   options: ProductOption[];
@@ -134,6 +135,10 @@ export type ShopifyProduct = {
   tags: string[];
   updatedAt: string;
 };
+
+export type ShopifyMetafield = {
+  value: string;
+}
 
 export type ShopifyCartOperation = {
   data: {

@@ -9,6 +9,9 @@ const productFragment = /* GraphQL */ `
     title
     description
     descriptionHtml
+    enhancedDescription: metafield(namespace: "custom", key: "hidden_description") {
+      value
+    }
     options {
       id
       name

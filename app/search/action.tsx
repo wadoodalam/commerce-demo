@@ -18,7 +18,7 @@ export async function getFilteredProducts(products: Product[], searchQuery: stri
   const simplifiedProducts = products.map(product => ({
     id: product.id,
     title: product.title,
-    description: product.description
+    description: product.enhancedDescription?.value,
   }));
 
   const previousPrompts = await getPreviousPromptsForUser();
