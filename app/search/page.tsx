@@ -20,8 +20,10 @@ export default async function SearchPage(props: {
   const filteredProducts = await getFilteredProducts(products, searchValue);
   const resultsText = products.length > 1 ? 'results' : 'result';
   
+  
   return (
     <>
+      
       {searchValue ? (
         <p className="mb-4">
           {filteredProducts.length === 0
@@ -30,6 +32,7 @@ export default async function SearchPage(props: {
           <span className="font-bold">&quot;{searchValue}&quot;</span>
         </p>
       ) : null}
+      
       {filteredProducts.length > 0 ? (
         <Grid className="grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           <ProductGridItems products={filteredProducts} />
@@ -38,3 +41,4 @@ export default async function SearchPage(props: {
     </>
   );
 }
+
